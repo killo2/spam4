@@ -7,10 +7,6 @@ const client3 = new Discord.Client();
 const client4 = new Discord.Client();
 const client5 = new Discord.Client();
 const client6 = new Discord.Client();
-const client7 = new Discord.Client();
-const client8 = new Discord.Client();
-const client9 = new Discord.Client();
-const client10 = new Discord.Client();
 
 
 //???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
@@ -98,6 +94,25 @@ message.channel.send("#rep "+"<@" + myid + ">")
 message.channel.send('#profile')
   }
   if(message.content.startsWith("s4")) {
+    var text = message.content.split(' ').slice(1).join(' ');
+     message.channel.send(text);
+  }
+});
+
+client4.on('message', message => {
+  if (message.content === 'd5') {
+message.channel.send('#daily')
+  }
+  if(message.content === 'c5'){
+message.channel.send('#credits')
+  }
+  if(message.content === 'r5'){
+message.channel.send("#rep "+"<@" + myid + ">")
+  }
+  if (message.content === 'p5') {
+message.channel.send('#profile')
+  }
+  if(message.content.startsWith("s5")) {
     var text = message.content.split(' ').slice(1).join(' ');
      message.channel.send(text);
   }
